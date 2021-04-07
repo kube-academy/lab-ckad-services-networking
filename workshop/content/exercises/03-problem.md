@@ -1,7 +1,7 @@
 
 1. Expose the greet service to the outside world via an [ingress resource](https://kubernetes.io/docs/concepts/services-networking/ingress/).
   Use [name-based virtual hosting](https://kubernetes.io/docs/concepts/services-networking/ingress/#name-based-virtual-hosting).
-  Name the ingress `greet-ingress`. Set the `host` to `{{session-namespace}}-greet.{{ingress_domain}}`.  The ingress backend should map to your internal `greet` ClusterIP service running on port 8080.
+  Name the ingress `greet-ingress`. Set the `host` to `{{session_namespace}}-greet.{{ingress_domain}}`.  The ingress backend should map to your internal `greet` ClusterIP service running on port 8080.
 
 ```examiner:execute-test
 name: svc-greet-ingress
