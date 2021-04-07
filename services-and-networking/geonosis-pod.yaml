@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    sector: arkanis
+  name: geonosis
+spec:
+  containers:
+  - name: geonosis
+    image: bitnami/nginx

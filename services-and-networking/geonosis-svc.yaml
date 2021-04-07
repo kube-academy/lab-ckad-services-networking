@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    sector: arkanis
+  name: geonosis
+spec:
+  type: ClusterIP
+  selector:
+    sector: arkanis
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080

@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: cara
+  name: cara
+spec:
+  selector:
+    matchLabels:
+      app: cara
+  template:
+    metadata:
+      labels:
+        app: cara
+    spec:
+      containers:
+      - name: httpd
+        image: bitnami/apache
+        ports:
+        - containerPort: 8080
+          protocol: TCP
