@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euo pipefail
+
+kubectl get ingress greet-ingress
+curl "http://${SESSION_NAMESPACE}-greet.${INGRESS_DOMAIN}"

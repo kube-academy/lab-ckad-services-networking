@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euo pipefail
+
+kubectl get pod ig-11 -o jsonpath='{.spec.containers[0].image}' | grep -q -w 'nginx'
+kubectl get pod ig-11 -o jsonpath='{.spec.containers[0].ports[0].containerPort'} | grep -q -w '8080'

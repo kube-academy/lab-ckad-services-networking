@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -euo pipefail
+
+kubectl get service cara -o jsonpath='{.spec.ports[0].nodePort}' | grep -q -w 31888
+# can't do this from inside an educates pod
+#curl localhost:31888 --connect-timeout 2

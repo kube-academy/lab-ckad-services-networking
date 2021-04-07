@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euo pipefail
+
+kubectl exec ig-11 -- curl greet:8080 --connect-timeout 1
+kubectl get services greet -o jsonpath='{.spec.type}' | grep -q -w ClusterIP
