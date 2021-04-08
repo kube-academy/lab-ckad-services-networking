@@ -1,5 +1,5 @@
 
-1. Create a ClusterIP service for pod `ig-11` named `greet`. Map service port 8080 to container port 8080.
+1. Create a ClusterIP service for pod ``ig-11``{{copy}} named ``greet``{{copy}}. Map service port 8080 to container port 8080.
 
 ```examiner:execute-test
 name: svc-clusterip-greet

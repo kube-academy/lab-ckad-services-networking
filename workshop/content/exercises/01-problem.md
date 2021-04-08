@@ -1,5 +1,5 @@
 
-1. Create a pod named `ig-11` with image `bitnami/nginx` and specifying the container port 8080.
+1. Create a pod named ``ig-11``{{copy}} with image ``bitnami/nginx``{{copy}} and specifying the container port 8080.
 
 ```examiner:execute-test
 name: svc-pod-ig11

@@ -15,7 +15,7 @@
 
 ## Challenge
 
-Create a network policy `geonosis-shield` which allows only pods with the label `empire=true` to access the service. Use appropriate labels.
+Create a network policy ``geonosis-shield``{{copy}} which allows only pods with the label `empire=true` to access the service. Use appropriate labels.
 
 ```examiner:execute-test
 name: svc-geonosis-netpol
